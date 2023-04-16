@@ -1,3 +1,9 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 body{
     /*It must be Hasboro sans*/
     background-color: #A6AB98;
@@ -56,4 +62,30 @@ a:after{
 a:hover:after{
     transform: scaleX(1);
     transform-origin: bottom left;
+}
+
+.banner{
+    background: url("../images/116153497_4138817416160266_8278286204196431175_n.png") center/cover;
+    height: 700px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.banner::before{
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: #A6AB98;
+    opacity: 0.5;
+}
+
+.lema{
+    padding: 10px;
+    position: absolute;
+    width: 100%;
+    max-width: 700px;
+    text-align: center;
+    color: #595357;
+    margin: auto;
 }
