@@ -11,6 +11,7 @@ body{
     color: #595357;
 }
 
+
 .navbar{
     display: flex;
     flex-direction: row;
@@ -46,6 +47,8 @@ a{
     position: relative;
 }
 
+
+/*underline animation */
 a:after{
     content: '';
     position: absolute;
@@ -64,28 +67,64 @@ a:hover:after{
     transform-origin: bottom left;
 }
 
+
+/*Banner styles*/
+
 .banner{
-    background: url("../images/116153497_4138817416160266_8278286204196431175_n.png") center/cover;
-    height: 700px;
-    position: relative;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.position{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.banner::before{
-    content: "";
-    height: 100%;
+
+.slider{
+    background-image: url(../images/seneca.png);
+    background-size: cover;
+    height: 80%;
     width: 100%;
-    background: #A6AB98;
-    opacity: 0.5;
+    padding-top: 50px;
+    padding-bottom: 0;
+    animation: animate 30s infinite;
+}
+
+@keyframes animate{
+    33%{
+        background-image: url(../images/echelman.jpg);
+        background-size: cover;
+    }
+
+    66%{
+        background-image: url(../images/blake.png);
+        background-size: cover;
+    }
+
+    100%{
+        background-image: url(../images/seneca.png);
+        background-size: cover;
+    }
 }
 
 .lema{
-    padding: 10px;
+    padding: 150px;
     position: absolute;
     width: 100%;
     max-width: 700px;
     text-align: center;
-    color: #595357;
+    justify-content: center;
+    color: #A4AC95;
     margin: auto;
+    align-self: center;
+}
+
+.lema {
+    -webkit-text-stroke: 0.5px #595357;
+    color: #A4AC95;
 }
