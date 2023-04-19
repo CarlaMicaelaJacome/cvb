@@ -9,6 +9,6 @@ body{
 
     @font-face {
         font-family: 'selino';
-        src: url();
+        src: url('../font/Selino-Regular-BF63bcc47b127b4.otf');
     }
 }
