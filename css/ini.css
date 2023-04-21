@@ -1,3 +1,8 @@
+@font-face{
+    src: url('../font/Selino-Regular.otf');
+    font-family: 'Selino';
+}
+
 html{
 
     height: 100%;
@@ -7,8 +12,5 @@ body{
     height: 100%;
     background-image: linear-gradient(to right top, #c9e197, #c3d797, #bccc98, #b6c298, #afb898, #abab90, #a49e89, #9b9283, #8f8078, #7f706e, #6c6163, #595357);
 
-    @font-face{
-        src: url('../font/Selino-Regular-BF63bcc47b127b4.otf');
-        font-family: 'Selino';
-    }
+    
 }
