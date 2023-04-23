@@ -2,14 +2,22 @@
     src: url('../font/Selino-Regular.otf');
     font-family: 'Selino';
 }
-
-html{
-
-    height: 100%;
+*{
+    box-sizing: border-box;
 }
 
+html, body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
 body{
-    height: 100%;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
     /*background-image: linear-gradient(to right top, #c9e197, #c3d797, #bccc98, #b6c298, #afb898, #abab90, #a49e89, #9b9283, #8f8078, #7f706e, #6c6163, #595357);*/
     background-image: linear-gradient(to left top, #C9E197, #C3d797, #BCCC98, #B6C298, #AFB898, #ABAB90, #A49E89, #9B9283, #8F8078, #7F706E, #6C6163, #595357);
     font-family: 'Selino', sans-serif;
@@ -180,13 +188,13 @@ a:hover:after{
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content:space-evenly;
+    justify-content:center;
     color: #3E3A3D;
 }
 
 h1{
     width: 100%;
-    font-size: 10em;
+    font-size: 8em;
     font-weight: 40;
     display: flex;
     justify-content: center;
