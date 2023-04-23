@@ -105,7 +105,7 @@ a:hover:after{
 
 /*Responsive navbar*/
 
-@media (max-width: 800px) {
+@media (max-width: 768px) {
 
     body{
         margin-top: 0em;
@@ -206,4 +206,66 @@ h4{
     font-weight: 10;
     display: flex;
     justify-content: center;
+}
+
+/*Responsive title*/
+@media (max-width: 768px){
+
+    .title{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content:space-evenly;
+        color: #3E3A3D;
+    }
+    
+    h1{
+        width: 100%;
+        font-size: 6em;
+        font-weight: 40;
+        display: flex;
+        justify-content: center;
+    }
+    
+    h4{
+        width: 100%;
+        font-size: 2.5em;
+        font-weight: 10;
+        display: flex;
+        justify-content: center;
+    }
+    
+
+}
+
+@media (min-device-width : 59px) {
+
+    .title{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        color: #3E3A3D;
+    }
+    
+    h1{
+        width: 100%;
+        font-size: 3em;
+        font-weight: 40;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 1em;
+    }
+    
+    h4{
+        width: 100%;
+        font-size: 1.5em;
+        font-weight: 10;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 1em;
+    }    
+
 }
