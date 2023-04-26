@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
     toggleButton.addEventListener('click', () => {
         navbarLinks.classList.toggle('active');
         overlay.classList.toggle('show');
-        document.body.classList.toggle('no-scroll');
+        //document.body.classList.toggle('no-scroll');
     });
 });
     
